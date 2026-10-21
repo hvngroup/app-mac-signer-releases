@@ -1,0 +1,15 @@
+name: Đề xuất tính năng
+description: Ý tưởng để HVN Mac Signer tốt hơn
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Anh/chị muốn làm việc gì?
+      description: Mô tả vấn đề hoặc tình huống, không chỉ giải pháp.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Anh/chị hình dung nó hoạt động thế nào?
