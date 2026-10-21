@@ -28,15 +28,18 @@ mềm đó. Dùng chứng thư dạng tệp thì vào **Chứng thư số → Nh
 
 ## Cập nhật
 
-Bản cài trong **Applications** tự tìm và cài bản mới từ repo này. Ứng dụng chỉ cài gói được ký bằng khoá cập nhật của
-HVN GROUP và không khởi động lại khi anh/chị đang ký. Có thể kiểm tra ngay ở **HVN Mac Signer → Kiểm tra cập nhật…**.
-Cài đặt, mẫu chữ ký và chứng thư đã nhập được giữ nguyên.
+Bản cài trong **Applications** tự tìm và tải bản mới từ repo này, rồi hiện "Bản vX.Y.Z đã sẵn sàng" trên thanh tiêu
+đề. Bấm vào đó để khởi động lại và cập nhật ngay; nếu không, bản mới được cài khi anh/chị thoát ứng dụng. Ứng dụng chỉ
+nhận gói được ký bằng khoá cập nhật của HVN GROUP. Cài đặt, mẫu chữ ký và chứng thư đã nhập được giữ nguyên.
+
+Tắt tự cập nhật ở **Cài đặt → Giới thiệu → Tự động cập nhật**. Kiểm tra ngay bằng **HVN Mac Signer → Kiểm tra cập
+nhật…**.
 
 ## Báo lỗi và hỗ trợ
 
-- Báo lỗi hoặc góp ý: mở [issue](https://github.com/hvngroup/app-mac-signer-releases/issues/new/choose). Ghi kèm
-  phiên bản (trong cửa sổ **Giới thiệu**), loại máy Mac và phiên bản macOS. Không đính kèm PIN, mật khẩu, tệp chứng
-  thư hay tài liệu thật; che mã số thuế trong ảnh chụp.
+- Báo lỗi hoặc góp ý: mở [issue](https://github.com/hvngroup/app-mac-signer-releases/issues/new/choose). Dán kèm
+  phần **Cài đặt → Giới thiệu → Sao chép thông tin** của ứng dụng (phiên bản app, phiên bản macOS, loại chip). Không
+  đính kèm PIN, mật khẩu, tệp chứng thư hay tài liệu thật; che mã số thuế trong ảnh chụp.
 - Lỗ hổng bảo mật: gửi qua
   [security advisory riêng](https://github.com/hvngroup/app-mac-signer-releases/security/advisories/new), đừng mở
   issue công khai. Cách ứng dụng xử lý dữ liệu: [SECURITY.md](SECURITY.md).

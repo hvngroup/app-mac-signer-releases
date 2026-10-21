@@ -21,28 +21,12 @@ body:
       placeholder: |
         1. Mở Ký tài liệu
         2. Chọn chứng thư ...
-  - type: input
-    id: version
+  - type: textarea
+    id: about
     attributes:
-      label: Phiên bản HVN Mac Signer
-      description: Xem trong cửa sổ Giới thiệu.
-      placeholder: "1.0.0"
-    validations:
-      required: true
-  - type: dropdown
-    id: mac
-    attributes:
-      label: Máy Mac
-      options:
-        - Apple silicon (M1 trở lên)
-        - Intel
-    validations:
-      required: true
-  - type: input
-    id: macos
-    attributes:
-      label: Phiên bản macOS
-      placeholder: "15.1"
+      label: Thông tin ứng dụng
+      description: Dán nội dung từ **Cài đặt → Giới thiệu → Sao chép thông tin** (phiên bản app, phiên bản macOS, loại chip).
+      render: text
     validations:
       required: true
   - type: dropdown
