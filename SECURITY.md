@@ -19,7 +19,9 @@ Không gửi kèm PIN, mật khẩu, tệp `.p12`/`.pfx`, khoá bí mật, tài 
 - **Dịch vụ ký cho trang web** (ESIGN cho cổng thuế, API tương thích CTSigningHub cho trang hóa đơn điện tử) mặc định
   tắt và chỉ nhận kết nối từ chính máy. Mỗi lần trang web yêu cầu ký, ứng dụng hiện hộp thoại để người dùng kiểm tra;
   không bấm **Ký** thì không có gì được ký.
-- **Kết nối ra ngoài duy nhất là kiểm tra cập nhật:** khi bật **Tự động cập nhật** (mặc định), vài giờ một lần ứng dụng
+- **Dấu thời gian** (mặc định tắt): khi bật, mỗi lần ký ứng dụng gửi mã băm SHA-256 của chữ ký (không gửi tài liệu) tới
+  máy chủ dấu thời gian người dùng chọn, mặc định `http://timestamp.digicert.com`.
+- **Kiểm tra cập nhật:** khi bật **Tự động cập nhật** (mặc định), vài giờ một lần ứng dụng
   đọc `latest.json` ở repo này và không gửi dữ liệu nào. Tắt công tắc này ở **Cài đặt → Giới thiệu** thì ứng dụng không
   tự kết nối. Không có máy chủ của HVN và không thu thập dữ liệu sử dụng.
 - **Cập nhật** chỉ được cài khi gói mang chữ ký bằng khoá cập nhật của HVN GROUP, và chỉ khi người dùng khởi động lại

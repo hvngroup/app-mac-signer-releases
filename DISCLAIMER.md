@@ -34,9 +34,11 @@ authority, applicable law, and the policies of the party that receives the
 document. You are solely responsible for confirming that your certificate,
 device and workflow meet those requirements.
 
-The following are not performed in the current release: RFC 3161 trusted
-timestamping, full certificate chain validation, and revocation checking
-(OCSP / CRL). A certificate that is still within its validity dates is not,
+RFC 3161 timestamping is optional and off by default; when turned on, the
+time stamp comes from the time-stamp authority the user chooses, and the app
+checks the token's signature but not the authority's certificate chain. The
+following are not performed in the current release: full certificate chain
+validation and revocation checking (OCSP / CRL). A certificate that is still within its validity dates is not,
 by that fact alone, trustworthy or free of revocation.
 
 ## Devices, tokens and middleware
@@ -102,8 +104,11 @@ luật hiện hành và chính sách của bên nhận tài liệu. Người dù
 nhiệm xác nhận rằng chứng thư, thiết bị và quy trình của mình đáp ứng các yêu
 cầu đó.
 
-Những phần sau chưa được thực hiện trong phiên bản hiện tại: dấu thời gian tin
-cậy RFC 3161, kiểm tra đầy đủ chuỗi chứng thư, và kiểm tra thu hồi (OCSP / CRL).
+Dấu thời gian RFC 3161 là tuỳ chọn và mặc định tắt; khi bật, dấu thời gian do máy
+chủ dấu thời gian người dùng chọn cấp, và ứng dụng kiểm chữ ký của token nhưng
+không kiểm chuỗi chứng thư của máy chủ đó. Những phần sau chưa được thực hiện
+trong phiên bản hiện tại: kiểm tra đầy đủ chuỗi chứng thư và kiểm tra thu hồi
+(OCSP / CRL).
 Một chứng thư còn trong thời hạn hiệu lực, chỉ riêng điều đó, không đồng nghĩa
 đáng tin cậy hay chưa bị thu hồi.
 
